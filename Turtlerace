@@ -1,0 +1,49 @@
+from turtle import Turtle
+from random import randint
+
+
+laura = Turtle()
+
+laura.color('red')
+laura.shape('turtle')
+
+laura.penup()
+laura.goto(-160, 100)
+laura.pendown()
+
+r = Turtle()
+l = Turtle()
+c = Turtle()
+s = Turtle()
+
+r.color('green')
+r.shape('turtle')
+r.penup()
+r.goto(-160, 70)
+r.pendown()
+
+l.color('blue')
+l.shape('turtle')
+l.penup()
+l.goto(-160, 50)
+l.pendown()
+
+c.color('Purple')
+c.shape('turtle')
+c.penup()
+c.goto(-160, 30)
+c.pendown()
+
+s.color('black')
+s.shape('turtle')
+s.penup()
+s.goto(-160, 10)
+s.pendown()
+
+for movement in range(100):
+    laura.forward(randint(1,5))
+    r.forward(randint(1,5))
+    l.forward(randint(1,5))
+    c.forward(randint(1,5))
+    s.forward(randint(1,5))
+
